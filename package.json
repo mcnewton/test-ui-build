@@ -12,10 +12,10 @@
   },
   "scripts": {
     "dev": "gulp preview",
-    "bundle": "gulp bundle && gulp bundle:pack",
-    "build": "antora ./../site.yaml",
-    "build:prod": "gulp bundle:pack && antora ./../site.yaml",
-    "stage": "npx surge ../prod-build --domain freeradius-wiki.surge.sh"
+    "bundle": "gulp",
+    "build": "antora site.yml",
+    "prestage": "gulp && npm run build",
+    "stage": "npx surge prod-build --domain freeradius-wiki.surge.sh"
   },
   "browserslist": [
     "last 2 versions"

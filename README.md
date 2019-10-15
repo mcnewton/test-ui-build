@@ -8,39 +8,18 @@ From the ui theme dir run `npm run dev` or `gulp preview` to develop using sampl
 
 ## Deploying
 
-From the ui theme dir run `gulp bundle` then `gulp bundle:pack` to build ui theme zip file.
+Run `npm run stage` which combines the `gulp` `npm run build` and `surge` commands.
 
-Then to build the site using this theme with antora use this command from the root dir:
+Otherwise you can run these steps individually:
 
-`antora site.yaml`
+Run `gulp` to build ui theme zip file.
 
-Sample `site.yaml file:
+Then to build the site using this theme with antora use this command:
 
-```
-site:
-  title: The FreeRADIUS project - Documentation
-  url: https://www.freeradius.org/docs
-content:
-  sources:
-  - url: https://github.com/FreeRADIUS/freeradius-server
-    branches: HEAD
-    start_path: doc/antora
-asciidoc:
-  attributes:
-    attribute-missing: skip
-ui:
-  bundle:
-    # Path to ui theme zip file:
-    # url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/master/raw/build/ui-bundle.zip?job=bundle-stable
-    url: ./antora-ui-default/build/ui-bundle.zip 
-    # snapshot: true
-  # supplemental_files: assets
-  # default_layout: default
-output:
-  clean: true
-  dir: ./prod-build
-```
+`antora site.yml`
 
-To stage the built site use `npm run stage` which is a shortcut for surge.
+To stage the built site use the follwing surge command:
+
+`npx surge prod-build --domain freeradius-wiki.surge.sh`
 
 the site can then be previewed at [https://freeradius-wiki.surge.sh/freeradius-server/latest/](https://freeradius-wiki.surge.sh/freeradius-server/latest/)
