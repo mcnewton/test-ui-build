@@ -22,6 +22,7 @@
   /* --body-font-family: 'Fira Sans', sans-serif; */
   --body-font-family: 'Montserrat', sans-serif;
   --body-font-color: var(--neutral40);
+  --body-font-weight-bold: 600;
   --navbar-background: white;
   --navbar_hover-background: none;
   --navbar-font-color: var(--neutral40);
@@ -160,4 +161,44 @@ h3 {
 
 .doc h2:not(.discrete) .anchor {
   text-indent: 0;
+}
+
+.nav-container {
+  font-size: var(--size5);
+}
+
+/* .nav-menu h3.title {
+  margin-bottom: 1rem;
+} */
+
+.nav-menu .nav-item {
+  position: relative;
+}
+
+.nav-menu .nav-item button {
+  margin-top: 0.2rem;
+}
+
+.nav-menu .nav-text,
+.nav-menu .nav-link {
+  padding: 0.2rem 0;
+  display: inline-block;
+}
+
+.nav-menu .nav-item.is-current-path > a {
+  font-weight: var(--body-font-weight-bold);
+}
+
+.nav-menu .nav-item.is-current-page > a {
+  position: relative;
+}
+
+.nav-menu .nav-item.is-current-page > a:before {
+  content: "";
+  width: 5px;
+  background-color: var(--blue20);
+  height: 100%;
+  position: absolute;
+  left: -0.7rem;
+  top: 0;
 }
