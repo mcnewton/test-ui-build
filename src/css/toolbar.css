@@ -2,9 +2,8 @@
   color: var(--toolbar-font-color);
   align-items: center;
   background-color: var(--toolbar-background);
-  box-shadow: 0 1px 0 var(--toolbar-border-color);
   display: flex;
-  font-size: calc(15 / var(--rem-base) * 1rem);
+  font-size: var(--size5);
   height: var(--toolbar-height);
   justify-content: flex-start;
   position: sticky;

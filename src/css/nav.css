@@ -3,7 +3,7 @@
   top: var(--navbar-height);
   left: 0;
   width: 100%;
-  font-size: calc(17 / var(--rem-base) * 1rem);
+  font-size: var(--size5);
   z-index: var(--z-index-nav);
   visibility: hidden;
 }
@@ -131,6 +131,40 @@ html.is-clipped--nav {
   margin-top: 0.5em;
 }
 
+.nav-menu .nav-item {
+  position: relative;
+}
+
+.nav-menu .nav-item button {
+  margin-top: 0.2rem;
+}
+
+.nav-menu .nav-text,
+.nav-menu .nav-link {
+  padding: 0.2rem 0;
+  display: inline-block;
+}
+
+.nav-menu .nav-item.is-current-path > a,
+.nav-menu .nav-item.is-current-path > .nav-text {
+  font-weight: var(--body-font-weight-bold);
+}
+
+.nav-menu .nav-item.is-current-page > a {
+  position: relative;
+}
+
+.nav-menu .nav-item.is-current-page > a::before {
+  content: "";
+  width: 5px;
+  background-color: var(--blue20);
+  height: 100%;
+  position: absolute;
+  left: -0.7rem;
+  top: 0;
+}
+
+
 /* adds some breathing room below a nested list */
 .nav-item-toggle ~ .nav-list {
   padding-bottom: 0.125rem;
@@ -168,7 +202,7 @@ html.is-clipped--nav {
 }
 
 .nav-panel-explore {
-  background: var(--nav-background);
+  background: var(--neutral50);
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -181,7 +215,7 @@ html.is-clipped--nav {
 .nav-panel-explore .context {
   font-size: calc(15 / var(--rem-base) * 1rem);
   flex-shrink: 0;
-  color: var(--nav-muted-color);
+  color: var(--neutral10);
   box-shadow: 0 -1px 0 var(--nav-panel-divider-color);
   padding: 0 0.25rem 0 0.5rem;
   display: flex;
