@@ -1,16 +1,22 @@
 :root {
   /* FreeRadius vars */
   --blue10: rgb(240, 251, 252);
-  --blue20: rgb(1, 165, 224);
+  --blue20: rgb(0, 165, 227);
   --blue25: rgb(1, 128, 173);
   --blue30: rgb(9, 52, 72);
   --blue40: rgb(5, 26, 36);
-  --neutral10: rgb(244, 244, 244);
+  --neutral10: rgb(247, 247, 247);
+  --neutral12: rgb(224, 224, 224);
   --neutral15: rgb(225, 231, 232);
   --neutral20: rgb(163, 163, 163);
   --neutral30: rgb(102, 102, 102);
   --neutral40: rgb(51, 51, 51);
   --neutral50: rgb(34, 34, 34);
+  --neutral60: rgb(5, 26, 36);
+  --purple50: rgb(126, 54, 222);
+  --red50: rgb(247, 0, 0);
+  --green50: rgb(0, 192, 146);
+  --yellow50: rgb(245, 218, 43);
   --size1: 36px;
   --size2: 28px;
   --size3-5: 24px;
@@ -40,7 +46,8 @@
   --caption-font-weight: normal;
   --table-border-color: var(--neutral15);
   --footer-font-color: white;
-  --footer-background: var(--neutral40);
+  --footer-link-font-color: var(--neutral20);
+  --footer-background: var(--neutral60);
 }
 
 h1,
@@ -58,11 +65,25 @@ h3 {
 }
 
 .button {
+  height: auto;
+  display: inline-flex;
+  align-items: center;
+  background: var(--blue20);
+  border: 1px solid var(--blue20);
+  border-radius: 0.15rem;
+  color: white;
+  white-space: nowrap;
   font-weight: 400;
   font-size: var(--size5);
   padding: 15px 20px;
   line-height: 1.286;
-  height: auto;
+  text-transform: uppercase;
+}
+
+.button:hover {
+  background-color: var(--blue25);
+  border-color: var(--blue25);
+  text-decoration: none;
 }
 
 .sites-nav {

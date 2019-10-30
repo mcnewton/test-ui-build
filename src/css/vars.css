@@ -58,15 +58,15 @@
   --page-version-menu-background: var(--color-smoke-70);
   --page-version-missing-font-color: var(--color-gray-30);
   /* admonitions */
-  --caution-color: #a0439c;
+  --caution-color: rgb(126, 54, 222);
   --caution-on-color: var(--color-white);
-  --important-color: #d32f2f;
+  --important-color: rgb(247, 0, 0);
   --important-on-color: var(--color-white);
-  --note-color: #217ee7;
+  --note-color: rgb(0, 165, 227);
   --note-on-color: var(--color-white);
-  --tip-color: #41af46;
+  --tip-color: rgb(0, 192, 146);
   --tip-on-color: var(--color-white);
-  --warning-color: #e18114;
+  --warning-color: rgb(245, 218, 43);
   --warning-on-color: var(--color-white);
   /* doc */
   --doc-font-color: var(--color-jet-50);
@@ -79,8 +79,8 @@
   --heading-font-weight: normal;
   --alt-heading-font-weight: var(--body-font-weight-bold);
   --section-divider-color: var(--panel-border-color);
-  --link-font-color: #1565c0;
-  --link_hover-font-color: #104d92;
+  --link-font-color: rgb(0, 165, 227);
+  --link_hover-font-color: rgb(126, 54, 222);
   --link_unresolved-font-color: var(--important-color);
   --abstract-background: var(--color-smoke-70);
   --abstract-font-color: var(--color-jet-20);

@@ -277,7 +277,8 @@
 .doc .admonitionblock td.content {
   padding: 1rem 1rem 0.75rem;
   background: var(--admonition-background);
-  width: 100%;
+  flex: 1 1 auto;
+  overflow-x: auto;
 }
 
 .doc .admonitionblock .icon {
@@ -553,11 +554,12 @@
 }
 
 .doc .dlist dt {
-  font-style: italic;
+  font-weight: normal;
 }
 
 .doc .dlist dd {
-  margin: 0 0 0.3rem 1.5rem;
+  margin: 0 0 1rem 1.5rem;
+  font-family: var(--monospace-font-family);
 }
 
 .doc .colist {
