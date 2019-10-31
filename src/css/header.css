@@ -18,7 +18,6 @@ body {
   flex-wrap: wrap;
   font-size: var(--size5);
   border-bottom: 1px solid var(--neutral10);
-
 }
 
 .navbar a {
@@ -170,7 +169,6 @@ body {
 .navbar-mid {
   font-weight: 600;
 }
-
 
 .navbar-divider {
   background-color: var(--navbar-menu-border-color);

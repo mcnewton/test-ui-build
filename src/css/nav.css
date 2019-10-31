@@ -164,7 +164,6 @@ html.is-clipped--nav {
   top: 0;
 }
 
-
 /* adds some breathing room below a nested list */
 .nav-item-toggle ~ .nav-list {
   padding-bottom: 0.125rem;
@@ -202,7 +201,7 @@ html.is-clipped--nav {
 }
 
 .nav-panel-explore {
-  background: var(--neutral50);
+  background: var(--blue30);
   display: flex;
   flex-direction: column;
   position: absolute;
