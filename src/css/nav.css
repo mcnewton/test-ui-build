@@ -3,9 +3,10 @@
   top: var(--navbar-height);
   left: 0;
   width: 100%;
-  font-size: var(--size5);
+  font-size: var(--size5-5);
   z-index: var(--z-index-nav);
   visibility: hidden;
+  font-family: var(--alt-font);
 }
 
 @media screen and (min-width: 769px) {
@@ -16,7 +17,7 @@
 
 @media screen and (min-width: 1024px) {
   .nav-container {
-    font-size: var(--size5);
+    font-size: var(--size5-5);
     flex: none;
     position: static;
     top: 0;
@@ -108,7 +109,7 @@ html.is-clipped--nav {
 .nav-menu h3.title {
   color: var(--nav-heading-font-color);
   font-size: inherit;
-  font-weight: var(--body-font-weight-bold);
+  font-weight: 600;
   margin: 0;
   padding: 0.25em 0 0.125em;
 }
@@ -147,7 +148,7 @@ html.is-clipped--nav {
 
 .nav-menu .nav-item.is-current-path > a,
 .nav-menu .nav-item.is-current-path > .nav-text {
-  font-weight: var(--body-font-weight-bold);
+  font-weight: 600;
 }
 
 .nav-menu .nav-item.is-current-page > a {
@@ -197,7 +198,7 @@ html.is-clipped--nav {
 
 .is-current-page > .nav-link,
 .is-current-page > .nav-text {
-  font-weight: var(--body-font-weight-bold);
+  font-weight: 600;
 }
 
 .nav-panel-explore {
@@ -215,7 +216,7 @@ html.is-clipped--nav {
   font-size: calc(15 / var(--rem-base) * 1rem);
   flex-shrink: 0;
   color: var(--neutral10);
-  box-shadow: 0 -1px 0 var(--nav-panel-divider-color);
+  /* box-shadow: 0 -1px 0 var(--nav-panel-divider-color); */
   padding: 0 0.25rem 0 0.5rem;
   display: flex;
   align-items: center;
@@ -262,7 +263,7 @@ html.is-clipped--nav {
 }
 
 .nav-panel-explore .component .title {
-  font-weight: var(--body-font-weight-bold);
+  font-weight: 600;
 }
 
 .nav-panel-explore .versions {
@@ -292,7 +293,7 @@ html.is-clipped--nav {
 .nav-panel-explore .component .is-current a {
   border-color: currentColor;
   opacity: 0.9;
-  font-weight: var(--body-font-weight-bold);
+  font-weight: 600;
 }
 
 /*

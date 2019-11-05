@@ -1,58 +1,9 @@
-:root {
-  /* FreeRadius vars */
-  --blue10: rgb(240, 251, 252);
-  --blue20: rgb(0, 165, 227);
-  --blue25: rgb(1, 128, 173);
-  --blue30: rgb(9, 52, 72);
-  --blue40: rgb(5, 26, 36);
-  --neutral10: rgb(247, 247, 247);
-  --neutral12: rgb(224, 224, 224);
-  --neutral15: rgb(225, 231, 232);
-  --neutral20: rgb(163, 163, 163);
-  --neutral30: rgb(102, 102, 102);
-  --neutral40: rgb(51, 51, 51);
-  --neutral50: rgb(34, 34, 34);
-  --neutral60: rgb(5, 26, 36);
-  --purple50: rgb(126, 54, 222);
-  --red50: rgb(247, 0, 0);
-  --green50: rgb(0, 192, 146);
-  --yellow50: rgb(245, 218, 43);
-  --size1: 36px;
-  --size2: 28px;
-  --size3-5: 24px;
-  --size3: 21px;
-  --size4: 18px;
-  --size5: 14px;
-  --size6: 12px;
-  --header-font-family: 'Fira Sans', sans-serif;
-
-  /* Antora theme vars */
-  /* --body-font-family: 'Fira Sans', sans-serif; */
-  --body-font-family: 'Montserrat', sans-serif;
-  --body-font-color: var(--neutral40);
-  --body-font-weight-bold: 600;
-  --navbar-background: white;
-  --navbar_hover-background: none;
-  --navbar-font-color: var(--neutral40);
-  --navbar-button-background: var(--blue20);
-  --navbar-button-border-color: var(--blue-20);
-  --navbar-button-font-color: white;
-  --navbar-height: calc(100 / var(--rem-base) * 1rem);
-  --navbar-menu-border-color: white;
-  --panel-background: var(--neutral10);
-  --admonition-background: white;
-  --toolbar-background: white;
-  --toolbar-border-color: var(--neutral10);
-  --caption-font-weight: normal;
-  --table-border-color: var(--neutral15);
-  --footer-font-color: white;
-  --footer-link-font-color: var(--neutral20);
-  --footer-background: var(--neutral60);
+body {
+  -webkit-font-smoothing: subpixel-antialiased;
 }
 
-h1,
-h2 {
-  font-family: var(--header-font-family);
+h1 {
+  font-size: var(--size1);
 }
 
 h2 {
@@ -60,8 +11,16 @@ h2 {
 }
 
 h3 {
-  font-weight: 600;
   font-size: var(--size4);
+}
+
+h4 {
+  font-size: var(--size5-5);
+  text-transform: uppercase;
+}
+
+h5 {
+  font-size: var(--size5-5);
 }
 
 .button {

@@ -49,6 +49,22 @@ This is an example paragraph.
 [example]
 This is an example paragraph.
 
+.This is the title
+****
+This is an example paragraph This is an example paragraph This is an example paragraph This is an example paragraph This is an example paragraph 
+
+.Optional title
+====
+[source,asciidoc]
+----
+.Optional title
+[example]
+This is an example paragraph.
+----
+This is an example paragraph.
+====
+****
+
 How about some code?
 
 [source,js]

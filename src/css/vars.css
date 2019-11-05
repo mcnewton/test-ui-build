@@ -1,4 +1,32 @@
 :root {
+  /* FreeRadius vars */
+  --blue10: rgb(240, 251, 252);
+  --blue20: rgb(0, 165, 227);
+  --blue25: rgb(1, 128, 173);
+  --blue30: rgb(9, 52, 72);
+  --blue40: rgb(5, 26, 36);
+  --neutral10: rgb(247, 247, 247);
+  --neutral12: rgb(224, 224, 224);
+  --neutral15: rgb(225, 231, 232);
+  --neutral20: rgb(163, 163, 163);
+  --neutral25: #999;
+  --neutral30: rgb(102, 102, 102);
+  --neutral40: rgb(51, 51, 51);
+  --neutral50: rgb(34, 34, 34);
+  --purple50: rgb(126, 54, 222);
+  --red50: rgb(247, 0, 0);
+  --green50: rgb(0, 192, 146);
+  --yellow50: rgb(245, 218, 43);
+  --size1: 2rem;
+  --size2: 1.55rem;
+  --size3-5: 1.33rem;
+  --size3: 1.166rem;
+  --size4: 1rem;
+  --size5-5: 0.88rem;
+  --size5: 0.77rem;
+  --size6: 0.66rem;
+  --header-font-family: 'Fira Sans', sans-serif;
+  --alt-font: 'Montserrat', sans-serif;
   /* colors */
   --color-white: #fff;
   --color-smoke-10: #fefefe;
@@ -22,23 +50,23 @@
   --body-font-size--desktop: 1.125em; /* 18px */
   --body-font-size--print: 0.9375em; /* 15px */
   --body-line-height: 1.15;
-  --body-font-color: var(--color-jet-70);
-  --body-font-family: "Roboto", sans-serif;
+  --body-font-color: var(--neutral40);
+  --body-font-family: 'Fira Sans', sans-serif;
   --body-font-weight-bold: 500;
   --monospace-font-family: "Roboto Mono", monospace;
   --monospace-font-weight-bold: 500;
   /* base */
   --body-background: var(--color-white);
-  --panel-background: var(--color-smoke-30);
+  --panel-background: var(--neutral10);
   --panel-border-color: var(--color-smoke-90);
   /* navbar */
-  --navbar-background: var(--color-jet-80);
-  --navbar-font-color: var(--color-white);
-  --navbar_hover-background: var(--color-black);
-  --navbar-button-background: var(--color-white);
-  --navbar-button-border-color: var(--panel-border-color);
-  --navbar-button-font-color: var(--body-font-color);
-  --navbar-menu-border-color: var(--panel-border-color);
+  --navbar-background: var(--color-white);
+  --navbar-font-color: var(--neutral40);
+  --navbar_hover-background: none;
+  --navbar-button-background: var(--blue20);
+  --navbar-button-border-color: var(--blue20);
+  --navbar-button-font-color: var(--color-white);
+  --navbar-menu-border-color: var(--color-white);
   --navbar-menu-background: var(--color-white);
   --navbar-menu-font-color: var(--body-font-color);
   --navbar-menu_hover-background: var(--color-smoke-50);
@@ -51,22 +79,22 @@
   --nav-panel-divider-color: var(--color-smoke-90);
   --nav-secondary-background: var(--color-smoke-70);
   /* toolbar */
-  --toolbar-background: var(--panel-background);
-  --toolbar-border-color: var(--panel-border-color);
-  --toolbar-font-color: var(--color-gray-70);
+  --toolbar-background: var(--color-white);
+  --toolbar-border-color: var(--neutral10);
+  --toolbar-font-color: inherit;
   --toolbar-muted-color: var(--color-gray-30);
   --page-version-menu-background: var(--color-smoke-70);
   --page-version-missing-font-color: var(--color-gray-30);
   /* admonitions */
-  --caution-color: rgb(126, 54, 222);
+  --caution-color: var(--purple50);
   --caution-on-color: var(--color-white);
-  --important-color: rgb(247, 0, 0);
+  --important-color: var(--red50);
   --important-on-color: var(--color-white);
-  --note-color: rgb(0, 165, 227);
+  --note-color: var(--blue20);
   --note-on-color: var(--color-white);
-  --tip-color: rgb(0, 192, 146);
+  --tip-color: var(--green50);
   --tip-on-color: var(--color-white);
-  --warning-color: rgb(245, 218, 43);
+  --warning-color: var(--yellow50);
   --warning-on-color: var(--color-white);
   /* doc */
   --doc-font-color: var(--color-jet-50);
@@ -76,23 +104,23 @@
   --doc-margin: 0 auto;
   --doc-margin--desktop: 0 2rem;
   --heading-font-color: var(--color-jet-80);
-  --heading-font-weight: normal;
+  --heading-font-weight: 500;
   --alt-heading-font-weight: var(--body-font-weight-bold);
   --section-divider-color: var(--panel-border-color);
-  --link-font-color: rgb(0, 165, 227);
-  --link_hover-font-color: rgb(126, 54, 222);
+  --link-font-color: var(--blue20);
+  --link_hover-font-color: var(--purple50);
   --link_unresolved-font-color: var(--important-color);
   --abstract-background: var(--color-smoke-70);
   --abstract-font-color: var(--color-jet-20);
   --abstract-border-color: var(--panel-border-color);
-  --admonition-background: var(--panel-background);
+  --admonition-background: var(--color-white);
   --admonition-label-font-weight: var(--body-font-weight-bold);
   --caption-font-color: var(--color-gray-70);
-  --caption-font-weight: var(--body-font-weight-bold);
+  --caption-font-weight: normal;
   --code-background: var(--panel-background);
   --code-font-color: var(--body-font-color);
   --example-background: var(--color-white);
-  --example-border-color: var(--color-gray-70);
+  --example-border-color: var(--neutral25);
   --kbd-background: var(--panel-background);
   --kbd-border-color: var(--color-gray-10);
   --pre-background: var(--panel-background);
@@ -102,15 +130,15 @@
   --quote-border-color: var(--color-gray-70);
   --quote-font-color: var(--color-gray-70);
   --quote-attribution-font-color: var(--color-gray-30);
-  --sidebar-background: var(--color-smoke-90);
-  --table-border-color: var(--panel-border-color);
+  --sidebar-background: var(--blue10);
+  --table-border-color: var(--neutral15);
   /* footer */
   --footer-line-height: var(--doc-line-height);
-  --footer-background: var(--color-smoke-90);
-  --footer-font-color: var(--color-gray-70);
-  --footer-link-font-color: var(--color-jet-80);
+  --footer-background: var(--blue40);
+  --footer-font-color: var(--color-white);
+  --footer-link-font-color: var(--neutral20);
   /* dimensions */
-  --navbar-height: calc(63 / var(--rem-base) * 1rem);
+  --navbar-height: calc(100 / var(--rem-base) * 1rem);
   --toolbar-height: calc(45 / var(--rem-base) * 1rem);
   --drawer-height: var(--toolbar-height);
   --body-top: var(--navbar-height);
@@ -121,7 +149,7 @@
   --nav-panel-height--desktop: calc(var(--nav-height--desktop) - var(--drawer-height));
   --nav-width: calc(270 / var(--rem-base) * 1rem);
   --doc-max-width: calc(720 / var(--rem-base) * 1rem);
-  --doc-max-width--desktop: calc(828 / var(--rem-base) * 1rem);
+  --doc-max-width--desktop: calc(720 / var(--rem-base) * 1rem);
   /* stacking */
   --z-index-nav: 1;
   --z-index-toolbar: 2;
