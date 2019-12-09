@@ -3,7 +3,7 @@ html.is-clipped--navbar {
 }
 
 body {
-  padding-top: var(--navbar-height);
+  padding-top: var(--body-top);
 }
 
 .navbar {
@@ -11,7 +11,7 @@ body {
   color: var(--navbar-font-color);
   height: var(--navbar-height);
   position: fixed;
-  top: 0;
+  top: 30px;
   width: 100%;
   word-wrap: break-word;
   z-index: var(--z-index-navbar);
@@ -140,7 +140,7 @@ body {
   color: var(--navbar-menu-font-color);
   display: block;
   line-height: var(--doc-line-height);
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 1.2rem;
   position: relative;
 }
 
@@ -249,7 +249,8 @@ body {
   }
 
   .navbar-mid {
-    margin: 0 auto;
+    flex: 1 1 auto;
+    justify-content: center;
   }
 
   .navbar-brand {
@@ -258,8 +259,7 @@ body {
 
   .navbar-end {
     justify-content: flex-end;
-    margin-left: auto;
-    /* padding-right: 1rem; */
+    padding-right: 1rem; 
   }
 
   .navbar-dropdown {

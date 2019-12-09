@@ -46,13 +46,17 @@ h5 {
 }
 
 .sites-nav {
+  position: fixed;
+  z-index: var(--z-index-navbar);
+  top: 0;
+  width: 100%;
   flex: 1 1 100%;
   display: flex;
   align-items: center;
   justify-content: flex-end;
   background-color: var(--neutral10);
   font-size: var(--size6);
-  /* height: calc(36 / var(--rem-base) * 1rem); */
+  height: var(--sitenav-height);
 }
 
 .sites-nav a,

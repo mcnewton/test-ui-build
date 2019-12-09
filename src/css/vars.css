@@ -27,6 +27,7 @@
   --size6: 0.66rem;
   --header-font-family: 'Fira Sans', sans-serif;
   --alt-font: 'Montserrat', sans-serif;
+  --sitenav-height: 30px;
   /* colors */
   --color-white: #fff;
   --color-smoke-10: #fefefe;
@@ -138,10 +139,10 @@
   --footer-font-color: var(--color-white);
   --footer-link-font-color: var(--neutral20);
   /* dimensions */
-  --navbar-height: calc(100 / var(--rem-base) * 1rem);
+  --navbar-height: calc(108 / var(--rem-base) * 1rem);
   --toolbar-height: calc(45 / var(--rem-base) * 1rem);
   --drawer-height: var(--toolbar-height);
-  --body-top: var(--navbar-height);
+  --body-top: calc(var(--navbar-height) + var(--sitenav-height));
   --body-min-height: calc(100vh - var(--body-top));
   --nav-height: calc(var(--body-min-height) - var(--toolbar-height));
   --nav-height--desktop: var(--body-min-height);
