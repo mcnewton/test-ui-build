@@ -71,9 +71,8 @@ h5 {
 
 .banner {
   margin: 0 2rem;
-  margin: 0 var(--doc-margin--desktop);
+  padding: 0 1rem;
   max-width: 55rem;
-  max-width: var(--doc-max-width--desktop);
 }
 
 .banner img {
