@@ -75,6 +75,7 @@ h5 {
   max-width: 55rem;
   max-width: var(--doc-max-width--desktop);
 }
+
 .banner img {
   width: 100%;
   display: block;
