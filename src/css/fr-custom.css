@@ -69,6 +69,12 @@ h5 {
   background-color: var(--neutral15);
 }
 
+.banner {
+  margin: 0 2rem;
+  margin: 0 var(--doc-margin--desktop);
+  max-width: 55rem;
+  max-width: var(--doc-max-width--desktop);
+}
 .banner img {
   width: 100%;
   display: block;

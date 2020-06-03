@@ -202,7 +202,7 @@ html.is-clipped--nav {
 }
 
 .nav-panel-explore {
-  background: var(--blue30);
+  background: var(--blue20);
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -227,11 +227,33 @@ html.is-clipped--nav {
 }
 
 .nav-panel-explore .context .version {
-  background-image: url(../img/chevron.svg);
-  background-repeat: no-repeat;
-  background-position: right 0.5rem top 50%;
-  background-size: auto 0.75em;
-  padding: 0 1.5rem 0 0;
+  position: relative;
+  padding-right: 0.5em;
+  /* background-image: url(../img/caret.svg); */
+  /* background-repeat: no-repeat; */
+  /* background-position: right 0.5rem top 50%; */
+  /* background-size: auto 0.75em; */
+}
+.nav-panel-explore .context .version::before {
+  content: '';
+  display: inline-block;
+  border-top: 5px solid;
+  border-left: 3px solid rgba(255,255,255,0);
+  border-right: 3px solid rgba(255,255,255,0);
+  position: absolute;
+  right: 0.805em;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.nav-panel-explore .context .version::after {
+  content: '';
+  display: inline-block;
+  vertical-align: bottom;
+  border: 1px solid;
+  border-radius: 2px;
+  width: 1.1em;
+  height: 1.1em;
+  margin-left: 0.5em;
 }
 
 .nav-panel-explore .components {
