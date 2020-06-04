@@ -1,11 +1,12 @@
 = Introduction
-Author Name
+Dillon Headley
 :idprefix:
 :idseparator: -
 :!example-caption:
 :!table-caption:
-
+:page-copyright: Dillon
 image:multirepo-ssg.svg[Multirepo SSG,200,float=right]
+
 Platonem complectitur mediocritatem ea eos.
 Ei nonumy deseruisse ius.
 Mel id omnes verear.
