@@ -2,4 +2,6 @@
     {{#if page.attributes.copyright}}
     <meta name="copyright" content="{{page.attributes.copyright}}" />
     {{/if}}
-    {{!-- <meta name="author" content="{{page.attributes.author}}" /> --}}
+    {{#if page.attributes.author}}
+    <meta name="author" content="{{page.attributes.author}}" />
+    {{/if}}
