@@ -4,7 +4,8 @@ Dillon Headley
 :idseparator: -
 :!example-caption:
 :!table-caption:
-:page-copyright: Dillon
+:page-copyright: Copyright 2020
+:page-license: CC-BY-NC 4.0
 image:multirepo-ssg.svg[Multirepo SSG,200,float=right]
 
 Platonem complectitur mediocritatem ea eos.

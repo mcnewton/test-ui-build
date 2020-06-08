@@ -688,3 +688,7 @@
   font-weight: var(--body-font-weight-bold);
   line-height: calc(1 / 1.1);
 }
+
+.article-footer {
+  margin-top: 3rem;
+}
