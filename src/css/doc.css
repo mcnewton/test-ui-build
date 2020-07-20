@@ -260,8 +260,8 @@
   width: 3rem;
   height: 4rem;
   background-color: currentColor;
-  -webkit-mask: url(/_/img/alert.svg) no-repeat 50% 50% content-box;
-  mask: url(/_/img/alert.svg) no-repeat 50% 50% content-box;
+  -webkit-mask: url({{or site.url (or siteRootUrl siteRootPath)}}/_/img/alert.svg) no-repeat 50% 50% content-box;
+  mask: url({{or site.url (or siteRootUrl siteRootPath)}}/_/img/alert.svg) no-repeat 50% 50% content-box;
   -webkit-mask-size: contain;
   mask-size: contain;
 }
