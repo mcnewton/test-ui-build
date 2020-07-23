@@ -73,6 +73,7 @@ jobs:
       with:
         ref: ${{ steps.get_branch.outputs.branch }}-releases
         path: releases
+        fetch-depth: 0
 
     - name: Update release branch
       run: |
